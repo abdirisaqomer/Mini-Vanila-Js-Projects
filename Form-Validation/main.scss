@@ -1,5 +1,69 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+// * {
+//     box-sizing: border-box;
+// }
+
+// body {
+//     background-color: #f9fafb;
+//     font-family: 'Open Sans', sans-serif;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     min-height: 100vh;
+//     margin: 0;
+// }
+
+// .container {
+//     background-color: #fff;
+//     border-radius: 5px;
+//     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+//     width: 400px;
+// }
+
+// .form {
+//     padding: 30px 40px;
+// }
+                
+// h2 {
+//     text-align: center;
+//     margin: 0 0 20px;
+// }
+
+// .form-control {
+//     margin-bottom: 10px;
+//     padding-bottom: 20px;
+//     position: relative;
+// }
+
+// .form-control label {
+//     color: #777;
+//     display: block;
+//     margin-bottom: 5px;
+// }
+
+// .form-control input {
+//     border: 2px solid #f0f0f0;
+//     border-radius: 4px;
+//     display: block;
+//     width: 100%;
+//     padding: 10px;
+//     font-size: 14px;
+// }
+
+// .form-control input:focus {
+//     outline: 0;
+//     border-color: #777;
+// }
+
+// .form-control.success input {
+//     border-color: #2ecc71;
+// }
+
+// .form-control.error input {
+//     border-color: #e74c3c;
+// }
+
 * {
     box-sizing: border-box;
 }
@@ -23,8 +87,8 @@ body {
             padding: 30px 40px;
             
             h2 {
-              text-align: center;
-              margin: 0 0 20px;
+            text-align: center;
+            margin: 0 0 20px;
             }
 
             .form-control {
@@ -37,7 +101,6 @@ body {
                     display: block;
                     margin-bottom: 5px;
                 }
-
                 input {
                     border: 2px solid #f0f0f0;
                     border-radius: 4px;
@@ -45,20 +108,19 @@ body {
                     width: 100%;
                     padding: 10px;
                     font-size: 14px;
-
                     &:focus {
                         outline: 0;
-                        border-color: solid 10px black;
+                        border-color: #777;
                     }
+                    
+                }
+                
+                &.success input {
+                    border-color: #2ecc71;
+                }
 
-                    success {
-                        border-color: #2ecc71;
-
-                    }
-
-                    success {
-                        border-color: #e74c3c;
-                    }
+                &.error input {
+                    border-color: #e74c3c;
                 }
 
                 small {
@@ -67,12 +129,13 @@ body {
                     bottom: 0;
                     left: 0;
                     visibility: hidden;
+                }
 
-                    error {
-                        visibility: visible;
-                    }
+                &.error small {
+                    visibility: visible;
                 }
             } 
+            
             button {
                 cursor: pointer;
                 background-color: #3498db;
@@ -87,4 +150,3 @@ body {
         }
     }
 }
-

@@ -60,14 +60,14 @@ body .container .form .form-control input {
 
 body .container .form .form-control input:focus {
   outline: 0;
-  border-color: solid 10px black;
+  border-color: #777;
 }
 
-body .container .form .form-control input success {
+body .container .form .form-control.success input {
   border-color: #2ecc71;
 }
 
-body .container .form .form-control input success {
+body .container .form .form-control.error input {
   border-color: #e74c3c;
 }
 
@@ -79,7 +79,7 @@ body .container .form .form-control small {
   visibility: hidden;
 }
 
-body .container .form .form-control small error {
+body .container .form .form-control.error small {
   visibility: visible;
 }
 
