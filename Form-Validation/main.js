@@ -25,6 +25,7 @@ const isValidEmail = (email) => {
 }
 
 //Event Listeners
+// This is where the user types their details on the form (dom)
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
